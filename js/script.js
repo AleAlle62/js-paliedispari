@@ -11,18 +11,60 @@ passaggi:
 */
 
 
+// scrivere input della parola
+// let inputParola = toString(prompt('inserisci una parola'));
 
-let inputParola = toString(prompt('inserisci una parola'));
-var arrayParola = [];
-arrayParola.push(inputParola);
+// // l'array dentreo cui viene scritto
+// var arrayParola = [];
+
+// // mettere la parola scritta in input dentro l'array
+// arrayParola.push(inputParola);
 
 
+// // collegamento alla funzione 
+// let parolaInversa = invertiParola(inputParola);
 
-if(arrayParola == inputParola){
-    console.log('la parola è palindroma');
-} else {
-    console.log('la parola non è palindroma');
+
+// if (inputParola = parolaInversa){
+//     console.log('palindroma')
+// } else {
+//     console.log('NON palindroma')
+// }
+
+
+// // funzione
+// function invertiParola(inputParola){
+//     let parolaInversa = '';
+//     var i = inputParola.length-1
+
+//     while ( i >= 0){
+//         parolaInversa += inputParola[i];
+//         i--
+//     }
+// }
+
+let inputParola = parseInt(prompt('inserisci una parola'))
+let arrayParola = []
+// inputParola.push(arrayParola)
+
+
+function palindrome() {
+    if (palindrome = true){
+        console.log('è palindroma');
+    } else {
+        console.log('non è palindroma')
+    }
+
+    return palindrome
 }
+
+
+
+
+
+
+
+
 
 
 /*
