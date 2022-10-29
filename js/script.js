@@ -11,52 +11,56 @@ passaggi:
 */
 
 
-// scrivere input della parola
-// let inputParola = toString(prompt('inserisci una parola'));
 
-// // l'array dentreo cui viene scritto
-// var arrayParola = [];
+//far inserire la parola
+const inputWord = prompt('Inserire una parola')
 
-// // mettere la parola scritta in input dentro l'array
-// arrayParola.push(inputParola);
+//dividere le varie lettere della parola
+const dividedWord = inputWord.split('')
 
-
-// // collegamento alla funzione 
-// let parolaInversa = invertiParola(inputParola);
+//una volta divisa, rigirarla
+const wordArray = dividedWord.reverse()
 
 
-// if (inputParola = parolaInversa){
-//     console.log('palindroma')
-// } else {
-//     console.log('NON palindroma')
-// }
+// usare prorpieta .join in modo che non ci sia nulla in mezzo alle lettere
+let invertedWord = dividedWord.join('');
+
+// creazione della funzione che richiama le parole per metterle a confronto
+function palindromeWord(wordA, wordB){
+    // creazione della condizione per cui se la prima parola è uguale alla saconda allora è palindroma
+    if (wordA == wordB) {
+        return('PAROLA PALINDROMA')
+    } else {
+        return('NON PALINDROMA')
+    }
+}
+
+// inizializzazione per cui il risultato che stampa a schermo è dato dalla funzione palindroma, che prende come valori la parola di input e la parola invertita
+let result = palindromeWord( inputWord, invertedWord);
+
+// stampare in console il risultato 
+console.log(result);
 
 
-// // funzione
-// function invertiParola(inputParola){
-//     let parolaInversa = '';
-//     var i = inputParola.length-1
 
-//     while ( i >= 0){
-//         parolaInversa += inputParola[i];
-//         i--
+
+
+
+
+
+
+
+
+// const parolaInvertita = parolaDivisaArray.join('');
+// function palindroma(testo1, testo2){
+//     if(testo1==testo2){
+//         return 'la parola inserita è palindroma';  
+//     } else{
+//         return'la parola inserita NON è palindroma';
 //     }
 // }
-
-let inputParola = parseInt(prompt('inserisci una parola'))
-let arrayParola = []
-// inputParola.push(arrayParola)
-
-
-function palindrome() {
-    if (palindrome = true){
-        console.log('è palindroma');
-    } else {
-        console.log('non è palindroma')
-    }
-
-    return palindrome
-}
+// risultato=palindroma(varParola, parolaInvertita);
+// alert (risultato);
 
 
 
