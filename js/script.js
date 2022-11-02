@@ -12,34 +12,34 @@
 
 
 
-//far inserire la parola
-const inputWord = prompt('Inserire una parola')
+// //far inserire la parola
+// const inputWord = prompt('Inserire una parola')
 
-//dividere le varie lettere della parola
-const dividedWord = inputWord.split('')
+// //dividere le varie lettere della parola
+// const dividedWord = inputWord.split('')
 
-//una volta divisa, rigirarla
-const wordArray = dividedWord.reverse()
+// //una volta divisa, rigirarla
+// const wordArray = dividedWord.reverse()
 
 
-// usare prorpieta .join in modo che non ci sia nulla in mezzo alle lettere
-let invertedWord = dividedWord.join('');
+// // usare prorpieta .join in modo che non ci sia nulla in mezzo alle lettere
+// let invertedWord = dividedWord.join('');
 
-// creazione della funzione che richiama le parole per metterle a confronto
-function palindromeWord(wordA, wordB){
-    // creazione della condizione per cui se la prima parola è uguale alla saconda allora è palindroma
-    if (wordA == wordB) {
-        return('PAROLA PALINDROMA')
-    } else {
-        return('NON PALINDROMA')
-    }
-}
+// // creazione della funzione che richiama le parole per metterle a confronto
+// function palindromeWord(wordA, wordB){
+//     // creazione della condizione per cui se la prima parola è uguale alla saconda allora è palindroma
+//     if (wordA == wordB) {
+//         return('PAROLA PALINDROMA')
+//     } else {
+//         return('NON PALINDROMA')
+//     }
+// }
 
-// inizializzazione per cui il risultato che stampa a schermo è dato dalla funzione palindroma, che prende come valori la parola di input e la parola invertita
-let Finalresult = palindromeWord( inputWord, invertedWord);
+// // inizializzazione per cui il risultato che stampa a schermo è dato dalla funzione palindroma, che prende come valori la parola di input e la parola invertita
+// let Finalresult = palindromeWord( inputWord, invertedWord);
 
-// // stampare in console il risultato 
-console.log(Finalresult);
+// // // stampare in console il risultato 
+// console.log(Finalresult);
 
 
 
@@ -68,7 +68,7 @@ let utenteChois = prompt('scegliere pari o dispari');
 console.log('la scelta dell utente è:' + utenteChois)
 
 // scelta del numero da 1 a 5 da parte dell'utente
-let inputNumber = prompt('inserire numero da 1 a 5');
+let inputNumber = parseInt(prompt('inserire numero da 1 a 5'));
 console.log('il numero dell utente è:' + inputNumber);
 
 // round arrotonda, random * 5 da un numero casuale da 1 a 5 
@@ -78,11 +78,12 @@ console.log('il numero casuale del pc è:' + randomPC);
 
 // funzione somma dei due numeri 
 function sum (a,b){
-    let sumNumber = a + b
-    if (sumNumber % 2 === 0){
-        return'la somma è: Pari'
-    } else {
-        return'la somma è: Dispari'
+    // dichiarazione variabile della somma dei due numeri
+    if((( a + b ) %2) === 0) {
+        return 'il risultato è: pari';
+    }
+    else {
+        return 'il risultato è: dispari';
     }
 }
 
@@ -91,11 +92,11 @@ let result = sum ( inputNumber, randomPC );
 console.log(result);
 
 // funzione che stampa la vottoria o la sconfitta dell'utente
-function allertWoL(d,e){
-    if (d = e){
-        return'HA VINTO UTENTE'
+function allertWoL ( d , e ){
+    if (d == e){
+        return'HAI VINTO '
     } else {
-        return'HA VINTO PC'
+        return'HAI PERSO'
     }
 }
 
